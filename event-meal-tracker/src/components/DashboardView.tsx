@@ -57,12 +57,6 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
     data.forEach((team) => {
       if (team.totalInTeam > 0 && team.pendingCount === 0) {
         if (!completedTeamAlerts.has(team.team)) {
-          // Trigger confetti for this newly completed team!
-          confetti({
-            particleCount: 50,
-            spread: 60,
-            origin: { y: 0.6 }
-          });
           setCompletedTeamAlerts((prev) => new Set([...prev, team.team]));
         }
       }
