@@ -12,7 +12,6 @@ import {
   Filter,
   RefreshCw
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { Meal, Participant } from '../types';
 import { StorageService } from '../services/storage';
 
